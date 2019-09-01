@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch --config ./config/webpack.base",
     "start": "webpack-dev-server --open --config ./config/webpack.dev",
-    "build": "webpack --config ./config/webpack.prod"
+    "stage": "webpack --env.production=false --config ./config/webpack.base",
+    "build": "webpack --env.production --config ./config/webpack.prod"
   },
   "repository": {
     "type": "git",
