@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const htmlConfig = require('./props/html-config')
 
 function resolve (dir) {
     return path.join(__dirname, '..', dir)
@@ -21,11 +22,7 @@ module.exports = {
         new CleanWebpackPlugin({
             // dry: true
         }),
-        new HtmlWebpackPlugin({
-            title: "Faster on Fire | Lessons Learned",
-            template: "./src/index.html",
-            filename: "index.html",
-        }),
+        new HtmlWebpackPlugin(htmlConfig),
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
             chunkFilename: '[id].[hash].css',
@@ -51,10 +48,7 @@ module.exports = {
                     },
                     {
                         loader: "image-webpack-loader",
-                        options: {
-                            // bypassOnDebug: true,
-                            // disable: true
-                        }
+                        options: {}
                     },
                 ],
                 include: [resolve('src/images')]
