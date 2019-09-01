@@ -1,18 +1,21 @@
 'use strict'
 const merge = require('webpack-merge')
-const webpackBaseConfig = require('./webpack.base.config')
+const baseWebpackConfig = require('./webpack.base')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const webpackProdConfig = merge(webpackBaseConfig, {
+const prodWebpackConfig = merge(baseWebpackConfig, {
     mode: 'production',
     output: {
-        filename: "[name].[chunkhash].js"
+        filename: "[name].[chunkhash].js",
+        // publicPath: "/dist"
     },
     optimization: {
         minimizer: [new TerserJSPlugin(), new OptimizeCSSAssetsPlugin()],
-        splitChunks: {chunks: "all"}
+        splitChunks: {
+            chunks: 'all'
+        }
     }
 })
 
-module.exports = webpackProdConfig
+module.exports = prodWebpackConfig

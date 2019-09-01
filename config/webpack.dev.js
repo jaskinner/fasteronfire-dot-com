@@ -1,8 +1,8 @@
 'use strict'
 const merge = require('webpack-merge')
-const webpackBaseConf = require('./webpack.base.config')
+const baseWebpackConfig = require('./webpack.base')
 
-const webpackDevConf = merge(webpackBaseConf, {
+const devWebpackConfig = merge(baseWebpackConfig, {
     mode: 'development',
     devtool: 'cheap-module-eval-source-map',
     devServer: {
@@ -11,4 +11,4 @@ const webpackDevConf = merge(webpackBaseConf, {
     }
 })
 
-module.exports = webpackDevConf
+module.exports = devWebpackConfig
