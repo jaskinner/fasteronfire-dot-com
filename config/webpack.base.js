@@ -19,14 +19,12 @@ module.exports = {
         path: path.resolve(__dirname, '../dist'),
     },
     plugins: [
-        new CleanWebpackPlugin({
-            // dry: true
-        }),
-        new HtmlWebpackPlugin(htmlConfig),
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
             chunkFilename: '[id].[hash].css',
         }),
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin(htmlConfig),
         new FaviconsWebpackPlugin('./src/favicon.svg')
     ],
     module: {
@@ -52,6 +50,10 @@ module.exports = {
                     },
                 ],
                 include: [resolve('src/images')]
+            },
+            {
+                test: /\.pug$/,
+                use: ["pug-loader"]
             }
         ]
     }
