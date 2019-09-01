@@ -48,7 +48,7 @@ module.exports = env => {
                 {
                     test: /\.(scss|css)$/,
                     use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
-                    include: [resolve('src'), resolve('node_modules/bootstrap'), resolve('node_modules/aos'), resolve('node_modules/animate.css')]
+                    include: [resolve('src'), resolve('node_modules/bootstrap')]
                 },
                 {
                     test: /\.(png|jpg|JPG|svg)$/,
