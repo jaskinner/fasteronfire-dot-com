@@ -8,7 +8,6 @@ const prodWebpackConfig = merge(baseWebpackConfig, {
     mode: 'production',
     output: {
         filename: "[name].[chunkhash].js",
-        // publicPath: "/dist"
     },
     optimization: {
         minimizer: [new TerserJSPlugin(), new OptimizeCSSAssetsPlugin()],

@@ -3,8 +3,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const webpack = require('webpack')
-const autoprefixer = require('autoprefixer')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 function resolve (dir) {
@@ -24,10 +22,9 @@ module.exports = {
             // dry: true
         }),
         new HtmlWebpackPlugin({
-            title: "Perspectives Conference 2019",
+            title: "Faster on Fire | Lessons Learned",
             template: "./src/index.html",
             filename: "index.html",
-            // favicon: "./src/favicon.ico"
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
