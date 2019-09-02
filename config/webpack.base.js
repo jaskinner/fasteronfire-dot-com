@@ -26,7 +26,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Faster on Fire | Lessons Learned',
-            template: './src/index.pug',
+            template: './src/index.html',
             filename: 'index.html',
             meta: {
                 //TODO: Add date
@@ -63,10 +63,6 @@ module.exports = {
                     },
                 ],
                 include: [resolve('src/images')]
-            },
-            {
-                test: /\.pug$/,
-                use: ["pug-loader"]
             }
         ]
     }
