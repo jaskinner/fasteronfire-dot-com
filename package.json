@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config ./config/webpack.base",
-    "start": "webpack-dev-server --config ./config/webpack.dev",
+    "start": "webpack-dev-server --open --config ./config/webpack.dev",
     "stage": "webpack --config ./config/webpack.base",
     "build": "webpack --config ./config/webpack.prod"
   },
