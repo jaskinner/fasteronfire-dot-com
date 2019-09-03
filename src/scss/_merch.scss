@@ -1,0 +1,36 @@
+#merch {
+  .merch-container {
+    padding: 1rem;
+
+    a {
+      position: relative;
+      display: block;
+      padding-top: 100%;
+      color: white;
+
+      & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .merch-overlay {
+        background-color: black;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 500ms ease;
+      }
+
+      &:hover {
+        .merch-overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
