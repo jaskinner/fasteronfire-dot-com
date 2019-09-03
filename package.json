@@ -51,8 +51,5 @@
     "plugins": {
       "autoprefixer": {}
     }
-  },
-  "dependencies": {
-    "popper.js": "^1.15.0"
   }
 }
