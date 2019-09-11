@@ -144,11 +144,11 @@
             <div class="col-md-4">
                 <h1>Stream us!</h1>
                 <div class="list-group list-group-flush player-buttons">
-                    <button type="button" class="list-group-item list-group-item-action active"
-                            data-player="apple-player">Apple Music
-                    </button>
                     <button type="button" class="list-group-item list-group-item-action" data-player="spotify-player">
                         Spotify
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action active"
+                            data-player="apple-player">Apple Music
                     </button>
                     <button type="button" class="list-group-item list-group-item-action" data-player="tidal-player">
                         Tidal
@@ -157,16 +157,16 @@
             </div>
             <div class="col-md-4">
                 <div class="player-blocks d-flex align-items-center justify-content-center">
+                    <div id="spotify-player" class="player">
+                        <iframe src="https://open.spotify.com/embed/artist/1dG6ZmpN2YSb6WiLUIXixE" width="300"
+                                height="380"
+                                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
                     <div id="apple-player" class="player">
                         <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="380"
                                 style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
                                 sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                                 src="https://embed.music.apple.com/us/album/june-again-single/1467418096?app=music"></iframe>
-                    </div>
-                    <div id="spotify-player" class="player">
-                        <iframe src="https://open.spotify.com/embed/artist/1dG6ZmpN2YSb6WiLUIXixE" width="300"
-                                height="380"
-                                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div id="tidal-player" class="player" style="height: 380px; width: 100%">
                         <div class="tidal-embed"
