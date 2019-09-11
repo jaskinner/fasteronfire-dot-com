@@ -4,10 +4,10 @@ import './js'
 
 $(function () {
     // deezer fix
-    setTimeout(function () {
-        $('#deezer-player').removeClass('active')
-        $('#apple-player').addClass('active')
-    }, 500)
+    // setTimeout(function () {
+    //     $('#deezer-player').removeClass('active')
+    //     $('#apple-player').addClass('active')
+    // }, 500)
 
     $('.player-buttons button').click(function () {
         let $this = $(this);
