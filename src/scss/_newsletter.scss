@@ -1,0 +1,32 @@
+#newsletter {
+  position: relative;
+
+  .buttonContainer {
+    margin: 0;
+  }
+
+  .privacyPolicy {
+    font-size: 0.5rem;
+  }
+
+  #topper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 400vw solid $secondary;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+
+    @include media-breakpoint-up(md) {
+      border-right: 300px solid transparent;
+      border-bottom: 300px solid transparent;
+    }
+    @include media-breakpoint-up(lg) {
+      border-right: 225px solid transparent;
+      border-bottom: 225px solid transparent;
+    }
+  }
+}
+

@@ -1,13 +1,16 @@
-// partials
-@import "navbar";
-@import "hero";
-@import "music";
-@import "merch";
-@import "shows";
-
 // fonts
 
 // vars
+$primary: lighten(#007bff, 20%);
+$secondary: lighten(red, 30%);
 
 // libraries
 @import "~bootstrap/scss/bootstrap";
+
+// partials
+@import "navbar";
+@import "hero";
+@import "newsletter";
+@import "music";
+@import "merch";
+@import "shows";

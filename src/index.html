@@ -58,41 +58,101 @@
 
 </header>
 
-<section id="newsletter" class="bg-secondary">
-    <div class="container py-5">
-        <form class="form-inline">
-            <label class="sr-only" for="inlineFormInputName2">Name</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+<section id="newsletter" class="overflow-hidden py-3 py-md-5">
+    <div id="topper"></div>
+    <!-- AWeber Web Form Generator 3.0.1 -->
+    <div class="container">
+        <form method="post" class="af-form-wrapper" accept-charset="UTF-8"
+              action="https://www.aweber.com/scripts/addlead.pl" target="_blank">
+            <div style="display: none;">
+                <input type="hidden" name="meta_web_form_id" value="356175857"/>
+                <input type="hidden" name="meta_split_id" value=""/>
+                <input type="hidden" name="listname" value="awlist5364684"/>
+                <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text"
+                       id="redirect_216d1e6a6917d0b263aa98644fd253e6"/>
 
-            <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-            <div class="input-group mb-2 mr-sm-2">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">@</div>
+                <input type="hidden" name="meta_adtracking" value="FoF_Mailing_List"/>
+                <input type="hidden" name="meta_message" value="1"/>
+                <input type="hidden" name="meta_required" value="email"/>
+
+                <input type="hidden" name="meta_tooltip" value=""/>
+            </div>
+            <div id="af-form-356175857" class="af-form row flex-wrap justify-content-start align-items-center">
+                <div class="col-12 col-md-7 col-lg-4">
+                    <div class="form-group">
+                        <h1>Sign up for updates</h1>
+                        <p>You'll get exclusive merch offers, early ticket access, and other cool stuff!</p>
+                    </div>
                 </div>
-                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                <div id="af-body-356175857" class="af-body af-standards col-12 col-md-7 col-lg-4">
+                    <div class="af-element form-group">
+                        <label class="previewLabel sr-only" for="awf_field-103474566">Email</label>
+                        <div class="af-textWrap">
+                            <input class="text form-control" id="awf_field-103474566" type="text" name="email"
+                                   value="" tabindex="500"
+                                   onfocus=" if (this.value == '') { this.value = ''; }"
+                                   onblur="if (this.value == '') { this.value='';} " placeholder="Email"
+                            />
+                        </div>
+                    </div>
+                    <div class="af-element buttonContainer form-group">
+                        <input name="submit" class="submit btn btn-primary" type="submit" value="Submit"
+                               tabindex="501"/>
+                    </div>
+                    <div class="af-element privacyPolicy">
+                        <a
+                                title="Privacy Policy" href="https://www.aweber.com/permission.htm" target="_blank"
+                                rel="nofollow">privacy policy</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="form-check mb-2 mr-sm-2">
-                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                <label class="form-check-label" for="inlineFormCheck">
-                    Remember me
-                </label>
+            <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=zKxsjOysHKzs" alt=""/>
             </div>
-
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
+        <script type="text/javascript">
+            <!--
+            (function () {
+                var IE = /*@cc_on!@*/false;
+                if (!IE) {
+                    return;
+                }
+                if (document.compatMode && document.compatMode == 'BackCompat') {
+                    if (document.getElementById("af-form-356175857")) {
+                        document.getElementById("af-form-356175857").className = 'af-form af-quirksMode';
+                    }
+                    if (document.getElementById("af-body-356175857")) {
+                        document.getElementById("af-body-356175857").className = "af-body inline af-quirksMode";
+                    }
+                    if (document.getElementById("af-header-356175857")) {
+                        document.getElementById("af-header-356175857").className = "af-header af-quirksMode";
+                    }
+                    if (document.getElementById("af-footer-356175857")) {
+                        document.getElementById("af-footer-356175857").className = "af-footer af-quirksMode";
+                    }
+                }
+            })();
+            -->
+        </script>
     </div>
+
+    <!-- /AWeber Web Form Generator 3.0.1 -->
 </section>
 
-<section id="music">
+<section id="music" class="py-3 bg-light">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-4">
                 <h1>Stream us!</h1>
                 <div class="list-group list-group-flush player-buttons">
-                    <button type="button" class="list-group-item list-group-item-action active" data-player="apple-player">Apple Music</button>
-                    <button type="button" class="list-group-item list-group-item-action" data-player="spotify-player">Spotify</button>
-                    <button type="button" class="list-group-item list-group-item-action" data-player="tidal-player">Tidal</button>
+                    <button type="button" class="list-group-item list-group-item-action active"
+                            data-player="apple-player">Apple Music
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action" data-player="spotify-player">
+                        Spotify
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action" data-player="tidal-player">
+                        Tidal
+                    </button>
                 </div>
             </div>
             <div class="col-md-4">
@@ -104,13 +164,15 @@
                                 src="https://embed.music.apple.com/us/album/june-again-single/1467418096?app=music"></iframe>
                     </div>
                     <div id="spotify-player" class="player">
-                        <iframe src="https://open.spotify.com/embed/artist/1dG6ZmpN2YSb6WiLUIXixE" width="300" height="380"
+                        <iframe src="https://open.spotify.com/embed/artist/1dG6ZmpN2YSb6WiLUIXixE" width="300"
+                                height="380"
                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div id="tidal-player" class="player" style="height: 380px; width: 100%">
                         <div class="tidal-embed"
                              style="position:relative;padding-bottom:100%;height:0;overflow:hidden;max-width:100%">
-                            <iframe src="https://embed.tidal.com/tracks/110810833?layout=gridify" allowfullscreen="allowfullscreen"
+                            <iframe src="https://embed.tidal.com/tracks/110810833?layout=gridify"
+                                    allowfullscreen="allowfullscreen"
                                     frameborder="0"
                                     style="position:absolute;top:0;left:0;width:100%;height:1px;min-height:100%;margin:0 auto"></iframe>
                         </div>
@@ -121,9 +183,9 @@
     </div>
 </section>
 
-<section id="merch">
-    <div class="container">
-        <div class="row">
+<section id="merch" class="">
+    <div class="container py-3 py-md-5">
+        <div class="row justify-content-center">
             <div class="col-md-3 merch-container">
                 <a href="https://fasteronfire.com/products/fof-logo-tee" target="_blank">
                     <div class="merch-img">
@@ -169,14 +231,10 @@
 
 <section id="shows" class="position-relative">
     <div class="container shows-container">
-        <div class="d-flex flex-row justify-content-around align-items-center shows-list">
-            <div class="flex-grow-1">
-                <a href="https://www.songkick.com/artists/10068086" class="songkick-widget" data-theme="light"
-                   data-other-artists="on" data-track-button="on" data-detect-style="true"
-                   data-background-color="transparent" data-locale="en">Faster on Fire Shows</a>
-                <script src="//widget.songkick.com/10068086/widget.js"></script>
-            </div>
-        </div>
+        <a href="https://www.songkick.com/artists/10068086" class="songkick-widget" data-theme="light"
+           data-other-artists="on" data-track-button="on" data-detect-style="true"
+           data-background-color="transparent" data-locale="en">Faster on Fire Shows</a>
+        <script src="//widget.songkick.com/10068086/widget.js"></script>
     </div>
 </section>
 
