@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img class="img-fluid" src="<%= require('./images/logos/fof_logo.png') %>" alt="Faster on Fire Logo">
@@ -92,7 +92,6 @@
                 <div class="list-group list-group-flush player-buttons">
                     <button type="button" class="list-group-item list-group-item-action active" data-player="apple-player">Apple Music</button>
                     <button type="button" class="list-group-item list-group-item-action" data-player="spotify-player">Spotify</button>
-                    <button type="button" class="list-group-item list-group-item-action" data-player="deezer-player">Deezer</button>
                     <button type="button" class="list-group-item list-group-item-action" data-player="tidal-player">Tidal</button>
                 </div>
             </div>
@@ -107,11 +106,6 @@
                     <div id="spotify-player" class="player">
                         <iframe src="https://open.spotify.com/embed/artist/1dG6ZmpN2YSb6WiLUIXixE" width="300" height="380"
                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div id="deezer-player" class="player active">
-                        <iframe scrolling="no" frameborder="0" allowTransparency="true"
-                                src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=ff0000&layout=&size=medium&type=album&id=99590592&app_id=1"
-                                width="300" height="300"></iframe>
                     </div>
                     <div id="tidal-player" class="player" style="height: 380px; width: 100%">
                         <div class="tidal-embed"

@@ -1,6 +1,11 @@
 #hero {
-  height: 100vh;
+  height: calc(100vh - 70px);
   width: 100vw;
-  background: url("../images/jlparty_main.jpg") center center white no-repeat;
+  background: url("../images/hero.png") center center white no-repeat;
   background-size: cover;
+
+  @media (orientation: portrait) {
+    background: url("../images/hero-m.png") center center white no-repeat;
+    background-size: cover;
+  }
 }
