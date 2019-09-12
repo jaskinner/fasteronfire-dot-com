@@ -1,11 +1,11 @@
 #hero {
   height: calc(100vh - 70px);
   width: 100vw;
-  background: url("../images/hero.png") center center white no-repeat;
+  background: url("../images/hero-img-l2.png") center center white no-repeat;
   background-size: cover;
 
   @media (orientation: portrait) {
-    background: url("../images/hero-m.png") center center white no-repeat;
+    background: url("../images/hero-img-p3.png") center center white no-repeat;
     background-size: cover;
   }
 }
