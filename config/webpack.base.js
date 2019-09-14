@@ -30,7 +30,7 @@ module.exports = {
             filename: 'index.html',
             meta: {
                 //TODO: Add date
-                'description': 'The Official Website of Raleigh, NC Pop Punk band Faster on Fire, stream Lessons Learned on all major platforms October XX, 2019',
+                'description': 'The Official Website of Raleigh, NC Pop Punk band Faster on Fire, stream Lessons Learned on all major platforms November 11, 2019',
                 // TODO: Maybe change this
                 'theme-color': '#000',
                 'robots': vars.meta.bots.dev,

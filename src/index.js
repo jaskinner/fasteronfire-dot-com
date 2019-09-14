@@ -1,13 +1,22 @@
 import './scss'
 import $ from 'jquery'
 import './js'
+import AOS from "aos/dist/aos";
+
+(function () {
+    AOS.init({
+        disable: 'mobile'
+    })
+})()
+
+$('.nav-item a').click(function (e) {
+    var anchor = $(this).attr('href');
+    e.preventDefault();
+
+    $.scrollTo(anchor, 400);
+})
 
 $(function () {
-    // deezer fix
-    // setTimeout(function () {
-    //     $('#deezer-player').removeClass('active')
-    //     $('#apple-player').addClass('active')
-    // }, 500)
 
     $('.player-buttons button').click(function () {
         let $this = $(this);

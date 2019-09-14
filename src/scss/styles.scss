@@ -1,8 +1,14 @@
 // fonts
+@import url("https://use.typekit.net/def2guj.css");
+
+$font-family-sans-serif: roboto-condensed, sans-serif;
+$headings-font-family: abril-text, serif, sans-serif;
 
 // vars
 $primary: lighten(#007bff, 20%);
 $secondary: lighten(red, 30%);
+$light: #e9ecef;
+$body-color: #343a40;
 
 // libraries
 @import "~bootstrap/scss/bootstrap";
@@ -14,3 +20,22 @@ $secondary: lighten(red, 30%);
 @import "music";
 @import "merch";
 @import "shows";
+
+//global styles
+
+.header-striped {
+  position: relative;
+  padding: 1rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    width: 100vw;
+    height: 100%;
+    background-color: $secondary;
+    z-index: -1;
+  }
+}
