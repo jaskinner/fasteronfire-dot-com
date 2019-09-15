@@ -1,15 +1,18 @@
 // fonts
-@import url("https://use.typekit.net/def2guj.css");
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto:300&display=swap');
 
-$font-family-sans-serif: roboto-condensed, sans-serif;
-$headings-font-family: abril-text, serif, sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family: 'Racing Sans One', cursive;
 
 // vars
 $primary: lighten(#007bff, 20%);
-$secondary: lighten(green, 30%);
+$secondary: lighten(orange, 10%);
 $light: #e9ecef;
 $body-color: #343a40;
 $dark: #212529;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 // libraries
 @import "~bootstrap/scss/bootstrap";
