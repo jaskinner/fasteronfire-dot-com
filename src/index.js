@@ -9,7 +9,7 @@ import AOS from "aos/dist/aos";
     })
 })()
 
-$('.nav-item a').click(function (e) {
+$('#navbar a').click(function (e) {
     var anchor = $(this).attr('href');
     e.preventDefault();
 
@@ -17,7 +17,6 @@ $('.nav-item a').click(function (e) {
 })
 
 $(function () {
-
     $('.player-buttons button').click(function () {
         let $this = $(this);
         let playerBtn = $this.data('player');
@@ -28,5 +27,9 @@ $(function () {
 
         player.addClass('active')
         $this.addClass('active')
+    })
+
+    $('.toggler').click(function () {
+        $('#navbar').toggleClass('nav-open')
     })
 })

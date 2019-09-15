@@ -27,39 +27,45 @@
     <meta name="twitter:image" content="">
 </head>
 <body>
-
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img class="img-fluid" src="<%= require('./images/logos/fof_logo.png') %>" alt="Faster on Fire Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#music-anchor">Music</a></li>
-                <li class="nav-item"><a class="nav-link" href="#merch-anchor">Merch</a></li>
-                <li class="nav-item"><a class="nav-link" href="#shows-anchor">Shows</a></li>
-                <li class="nav-item">
-                    <span class="navbar-text">
-                    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1dG6ZmpN2YSb6WiLUIXixE&size=basic&theme=light&show-count=0"
-                            width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-                            allowtransparency="true"></iframe>
-                </span>
-                </li>
-            </ul>
-        </div>
+<div class="cta-overlay bg-dark"></div>
+<nav id="navbar" class="bg-transparent d-flex justify-content-between">
+    <div class="navbar-toggle navbar-toggle-closed toggler text-center d-flex align-items-center justify-content-center">
+        <i class="fas fa-2x fa-chevron-left animated heartBeat infinite"></i>
+    </div>
+    <div class="navbar-toggle navbar-toggle-open toggler text-center d-flex align-items-center justify-content-center">
+        <i class="fas fa-2x fa-chevron-right animated heartBeat infinite"></i>
+    </div>
+    <div class="nav-brand text-center">
+        <img class="img-fluid" src="<%= require('./images/logos/fof_logo.png') %>" alt="">
+    </div>
+    <div class="nav-items text-center bg-dark d-flex flex-wrap align-items-end">
+        <ul class="m-0 mt-5 p-0">
+            <li class="toggler"><a href="#music-anchor">Music</a></li>
+            <li class="toggler"><a href="#merch-anchor">Merch</a></li>
+            <li class="toggler"><a href="#shows-anchor">Shows</a></li>
+            <li>
+                <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1dG6ZmpN2YSb6WiLUIXixE&size=basic&theme=light&show-count=0"
+                        width="95" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
+                        allowtransparency="true"></iframe>
+            </li>
+        </ul>
+        <ul class="logos m-0 p-0 py-3 d-flex justify-content-center">
+<!--            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/facebook-logo-button.png') %>" alt=""></a></li>-->
+<!--            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/instagram-logo.png') %>" alt=""></a></li>-->
+            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/SPOTIFY-FoF-150x150.png') %>" alt=""></a></li>
+            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/AMAZON-FoF-150x150.png') %>" alt=""></a></li>
+            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/APPLE-FoF-150x150.png') %>" alt=""></a></li>
+            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/GPLAY-FoF-150x150.png') %>" alt=""></a></li>
+            <li><a href=""><img class="img-fluid" src="<%= require('./images/logos/PANDORA-FoF-150x150.png') %>" alt=""></a></li>
+        </ul>
     </div>
 </nav>
 
-<header id="hero">
-
+<header id="hero" class="d-flex justify-content-center align-items-end text-center">
+    <h1 class="hero-callout animated heartBeat delay-2s"><a href="https://distrokid.com/hyperfollow/fasteronfire/lessons-learned" target="_blank">11/11</a></h1>
 </header>
 
 <section id="newsletter" class="overflow-hidden py-3 py-md-5">
-    <div id="topper"></div>
     <!-- AWeber Web Form Generator 3.0.1 -->
     <div class="container">
         <form method="post" class="af-form-wrapper" accept-charset="UTF-8"
