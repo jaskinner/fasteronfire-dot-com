@@ -1,0 +1,27 @@
+#new-release {
+  .new-relase-container {
+
+    @include media-breakpoint-up(md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "blurb art" "outlets art";
+    }
+  }
+
+  .new-release-blurb {
+    grid-area: blurb;
+  }
+
+  .new-release-outlets {
+    grid-area: outlets;
+
+    @include media-breakpoint-up(md) {
+      align-self: end;
+    }
+  }
+
+  .new-release-cover {
+    grid-area: art;
+  }
+}

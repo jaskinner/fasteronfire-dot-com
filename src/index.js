@@ -9,7 +9,7 @@ import AOS from "aos/dist/aos";
     })
 })()
 
-$('#navbar a').click(function (e) {
+$('.nav-page-links a').click(function (e) {
     var anchor = $(this).attr('href');
     e.preventDefault();
 
