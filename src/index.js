@@ -18,7 +18,7 @@ $(window).on('load', function () {
     }
 
     setTimeout(function () {
-        $('*').delay(800).scrollLock('disable')
+        $('*').scrollLock('disable')
     }, 1200);
 
 });
