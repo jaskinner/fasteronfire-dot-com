@@ -4,8 +4,8 @@
     @include media-breakpoint-up(md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "blurb art" "outlets art";
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "blurb art" "btn art" "outlets art";
     }
   }
 
@@ -18,7 +18,15 @@
 
     @include media-breakpoint-up(md) {
       align-self: end;
+
+      ul {
+        width: 50%;
+      }
     }
+  }
+
+  .new-release-btn {
+    align-self: center;
   }
 
   .new-release-cover {
