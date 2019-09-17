@@ -34,8 +34,8 @@ module.exports = {
                 'description': 'The Official Website of Raleigh, NC Pop Punk band Faster on Fire, stream Lessons Learned on all major platforms November 11, 2019',
                 // TODO: Maybe change this
                 'theme-color': '#000',
-                'robots': vars.meta.bots.dev,
-                'googlebot': vars.meta.bots.dev,
+                'robots': vars.meta.bots.prod,
+                'googlebot': vars.meta.bots.prod,
                 'rating': 'General'
             }
         }),
