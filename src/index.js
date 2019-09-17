@@ -1,13 +1,27 @@
 import './scss'
 import $ from 'jquery'
 import './js'
-import AOS from "aos/dist/aos";
+import 'jquery-scroll-lock'
+import AOS from "aos/dist/aos"
 
 (function () {
+    $('*').scrollLock();
+
     AOS.init({
         disable: 'mobile'
     })
 })()
+
+$(window).on('load', function () {
+    if ($('div').is('.cta-overlay')) {
+        $('.cta-overlay').delay(500).fadeOut(800);
+    }
+
+    setTimeout(function () {
+        $('*').delay(800).scrollLock('disable')
+    }, 1200);
+
+});
 
 $('.nav-page-links a').click(function (e) {
     var anchor = $(this).attr('href');

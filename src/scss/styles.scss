@@ -28,11 +28,6 @@ $border-radius-sm: 0;
 
 //global styles
 
-body {
-  overflow: hidden;
-  animation: appear 1s 1s forwards;
-}
-
 .cta-overlay {
   position: absolute;
   width: 100%;
@@ -41,14 +36,14 @@ body {
   animation: disappear 3s linear forwards;
 }
 
-@keyframes disappear {
-  0%   {opacity: 1;height: 100%}
-  25%   {opacity: 1;height: 100%}
-  50%   {opacity: 0;height: 100%}
-  100%  {opacity: 0;height: 0;}
-}
-
-@keyframes appear {
-  0%   {height: 100vh}
-  100%  {height: 100%;overflow: auto}
-}
+//@keyframes disappear {
+//  0%   {opacity: 1;height: 100%}
+//  25%   {opacity: 1;height: 100%}
+//  50%   {opacity: 0;height: 100%}
+//  100%  {opacity: 0;height: 0;}
+//}
+//
+//@keyframes appear {
+//  0%   {height: 100vh}
+//  100%  {height: 100%;overflow: auto}
+//}
