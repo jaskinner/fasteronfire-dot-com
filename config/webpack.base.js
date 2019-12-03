@@ -69,9 +69,9 @@ module.exports = {
                             //     quality: 65
                             // },
                             // // optipng.enabled: false will disable optipng
-                            // optipng: {
-                            //     enabled: true,
-                            // },
+                            optipng: {
+                                enabled: true,
+                            },
                             // pngquant: {
                             //     // quality: 65-80,
                             //     speed: 11
