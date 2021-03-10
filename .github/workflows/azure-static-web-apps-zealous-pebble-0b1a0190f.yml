@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      # Node.js tool installer
+      # Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '10.x' 
+          #force32bit: false # Optional
+          #checkLatest: false # Optional
       - uses: actions/checkout@v2
         with:
           submodules: true
